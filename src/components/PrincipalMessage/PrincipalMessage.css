@@ -1,0 +1,59 @@
+.imgHeadingPrincipal {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/images/common_msg_banner.jpg') no-repeat center;
+}
+
+.principal_main_cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 5rem;
+    font-family: var(--primary-font);
+}
+
+.principal_left_cont {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.principal_left_cont img {
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.principal_right_cont {
+    min-width: 300px;
+    width: 60%;
+    letter-spacing: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.principal_right_name {
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 700;
+}
+
+
+@media (max-width: 540px) {
+    .principal_main_cont {
+        padding: 3rem;
+    }
+
+    .principal_left_cont {
+        width: 100%;
+        gap: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .principal_left_cont img {
+        border-radius: 0;
+    }
+}

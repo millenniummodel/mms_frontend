@@ -1,0 +1,40 @@
+.modal{
+    font-family: var(--primary-font);
+  }
+  .modal-title{
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  .modal_body{
+    padding: 2rem 2.5rem;
+  }
+  .form-control{
+    height: 2.5rem;
+  }
+  .modal_btn_cont{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    gap: 1rem;
+  }
+  .cancel_btn{
+    font-weight: 600;
+    color: red;
+  }
+  .cancel_btn:hover{
+    color: red;
+    background-color: rgb(254, 219, 219);
+  }
+  .add_btn{
+    font-weight: 600;
+    color: rgb(7, 218, 7);
+  }
+  .add_btn:hover{
+    color: rgb(7, 218, 7);
+    background-color: rgb(207, 251, 207);
+  }
+  

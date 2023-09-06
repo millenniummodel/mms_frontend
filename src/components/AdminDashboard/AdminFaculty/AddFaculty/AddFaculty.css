@@ -1,0 +1,79 @@
+.add_faculty_main_cont {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.add_faculty_main_cont Form {
+    width: 70%;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.351);
+    font-weight: 600;
+}
+
+.add_faculty_main_cont Form h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Prompt', sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.facInputBox input,
+.facInputBox select {
+    width: 80%;
+    margin: 1px 2px;
+    border: 2px solid rgb(200, 200, 200);
+    padding: 4px;
+    border-radius: 4px;
+    color: var(--secondary-clr);
+    border: 1px solid black;
+}
+
+.facInputBox input:focus,
+.facInputBox select:focus {
+    outline: none;
+}
+
+.add_faculty_submit_btn_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.add_faculty_submit_btn {
+    background-color: var(--primary-clr);
+    color: white;
+    padding: 0.8rem 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.add_faculty_submit_btn:hover {
+    opacity: 0.9;
+}
+
+
+
+@media (max-width: 1000px) {
+    .add_faculty_main_cont Form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .add_faculty_main_cont Form {
+        width: 100%;
+        padding: 3rem 0;
+    }
+    .add_faculty_main_cont{
+        padding: 3rem 1rem;
+    }
+}

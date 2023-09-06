@@ -1,0 +1,104 @@
+.imgHeadingFaculty {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://indusuni.ac.in/phase3images/faculty-banner.png') no-repeat center;
+}
+
+.facpage_main_cont {
+    width: 100%;
+    padding: 5rem;
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    letter-spacing: 0.1rem;
+}
+
+.facpage_facbox {
+    width: 20%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.facpage_facbox:hover {
+    box-shadow: 0 0 10px rgb(198, 198, 198);
+}
+
+.facpage_facbox img {
+    width: 100%;
+}
+
+.facpage_facinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+
+.facpage_facinfo_detail_main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.facdetail_name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.facdetail_desig {
+    font-size: 0.8rem;
+    width: fit-content;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(234, 234, 234);
+    color: blue;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.facdetail_title {
+    color: gray;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 540px) {
+    .facpage_main_cont {
+        padding: 3rem 2rem;
+        gap: 1rem;
+    }
+
+    .facpage_facbox {
+        gap: 1rem;
+        box-shadow: 0 0 5px rgb(199, 198, 198);
+    }
+
+    .facpage_facinfo_detail_main {
+        gap: 0.5rem;
+    }
+
+    .facdetail_name {
+        font-size: 1.2rem;
+    }
+
+    .facdetail_desig {
+        font-size: 0.7rem;
+    }
+
+    .facpage_facbox img {
+        margin-bottom: 0.5rem;
+    }
+}

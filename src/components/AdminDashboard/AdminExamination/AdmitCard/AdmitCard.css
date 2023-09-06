@@ -1,0 +1,71 @@
+.admin_timetable_box {
+    display: flex;
+}
+
+.inputBox1 input,
+.inputBox1 select {
+    text-align: center;
+}
+
+.submitBtn1 {
+    background-color: var(--primary-clr);
+    color: white;
+    padding: 0.3rem 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.admin_admit_card_main {
+    /* width: 100%; */
+    /* height: 85vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin_admit_card_main Form {
+    width: 95%;
+    margin: auto;
+    font-family: var(--primary-font);
+    letter-spacing: 0.1rem;
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.351);
+    font-weight: 600;
+}
+
+.admin_admit_card_main Form h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Prompt', sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.inputBox1 input,
+.inputBox1 select {
+    width: 100%;
+    /* margin-top: 5px; */
+    margin: 1px 2px;
+    border: 2px solid rgb(200, 200, 200);
+    padding: 4px;
+    border-radius: 4px;
+    color: var(--secondary-clr);
+}
+
+
+
+/*-----------------*/
+
+@media (max-width: 1000px) {
+    .admin_admit_card_main Form{
+        padding: 1rem 0.5rem;
+    }
+
+    .time_table_details{
+        margin: 2.5rem 0;
+    }
+
+}

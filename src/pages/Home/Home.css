@@ -1,0 +1,217 @@
+.banner {
+  min-height: calc(100vh - 100px);
+  background-image: url("../../assets/images/pexels-anil-sharma-11366735.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nameBox {
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+  top: 20vh;
+  left: 55vw;
+  min-height: 40vh;
+  width: 40vw;
+  background-color: #dcd6d6c8;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nameBox .title {
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  font-size: 4rem;
+  text-align: center;
+  line-height: 5rem;
+  color: var(--secondary-clr);
+  letter-spacing: 0.2rem;
+}
+
+.nameBox .headline {
+  margin-top: 1rem;
+  letter-spacing: 0.3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--secondary-clr);
+  font-size: 1.1rem;
+}
+
+
+.topBanner {
+  min-height: 40vh;
+  width: 100%;
+  background-color: var(--secondary-clr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 6rem;
+  gap: 1rem;
+}
+
+.topBanner_head {
+  padding: 1rem;
+  color: white;
+  font-family: var(--secondary-font);
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  flex-direction: column;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.topBanner_welcome {
+  color: var(--primary-clr);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.topBanner_cat {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: var(--primary-font);
+  gap: 1.5rem;
+  border: 2px solid rgb(194, 41, 232);
+  border-radius: 0.5rem;
+  min-width: 140px;
+}
+
+.topBanner_cat:hover {
+  background-color: rgba(194, 41, 232, 0.125);
+}
+
+.topBanner_cat i {
+  color: var(--primary-clr);
+  font-size: 3rem;
+}
+
+.topbanner_cat_head {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.home_abt {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  padding: 6rem;
+  gap: 4rem;
+}
+
+.abt_left {
+  max-width: 30%;
+}
+
+.abt_left h3 {
+  color: var(--secondary-clr);
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+
+.abt_left p {
+  margin-top: 1.3rem;
+  font-family: var(--primary-font);
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.img_gallery {
+  width: 55%;
+}
+
+.img_gallery img {
+  width: 100%;
+}
+
+
+
+
+@media (max-width: 1000px) {
+  .nameBox {
+    left: 20vw;
+    width: 60vw;
+  }
+
+  .nameBox .title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .nameBox .headline {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .topBanner {
+    padding: 2rem 2rem;
+  }
+
+  .topBanner_cat,
+  .topBanner_head {
+    width: 50%;
+    height: 30vh;
+  }
+}
+
+
+
+@media (max-width: 540px) {
+
+  .nameBox {
+    left: 5vw;
+    width: 90vw;
+    min-height: 30vh;
+  }
+
+  .nameBox .title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .nameBox .headline {
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .topBanner_cat,
+  .topBanner_head {
+    min-width: 100%;
+  }
+
+  .home_abt {
+    padding: 3rem;
+    gap: 3rem;
+  }
+
+  .abt_left {
+    max-width: 100%;
+  }
+
+  .abt_left p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+  }
+
+  .img_gallery {
+    width: 100%;
+  }
+
+}

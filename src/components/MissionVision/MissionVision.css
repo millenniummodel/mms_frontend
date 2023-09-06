@@ -1,0 +1,41 @@
+.imgHeadingMission {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/images/mission_top.png') no-repeat center;
+    background-size: cover;
+}
+
+.mission_main_cont {
+    padding: 1rem 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    color: var(--secondary-clr);
+    text-align: center;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: var(--primary-font);
+}
+
+.mission h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.mission p {
+    font-size: 1.1rem;
+}
+
+
+
+
+@media (max-width: 540px) {
+    .mission_main_cont {
+        padding: 1rem 3rem;
+    }
+}

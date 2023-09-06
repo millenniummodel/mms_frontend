@@ -1,0 +1,11 @@
+.imgHeadingSchoolTimings {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/images/timing_top.jpg') no-repeat center;
+}
+
+.schoolTiming_box{
+    border: 1px solid gray;
+    font-family: var(--primary-font);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-underline-offset: 3px;
+}

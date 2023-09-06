@@ -1,0 +1,119 @@
+.imgHeadingUniform {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets//images/uniform_top.jpeg') no-repeat center;
+}
+
+.uniform_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: var(--primary-font);
+    gap: 3rem;
+    padding-top: 3rem;
+}
+
+.uniform_section h2 {
+    text-align: center;
+    background-color: var(--primary-clr);
+    color: white;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.uniform_main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    font-family: var(--primary-font);
+    gap: 4rem;
+}
+
+.uniform_main_even {
+    flex-wrap: wrap;
+}
+
+.uniform_main_img {
+    width: 50%;
+    display: flex;
+}
+
+.uniform_main_content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.uniform_title {
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    background-color: rgb(209, 230, 249);
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+
+.uniform_main_content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.uniform_main_content li {
+    font-size: 1.2rem;
+    list-style-type: square;
+}
+
+.uniform_main_img img {
+    width: 100%;
+    /* height: 100%; */
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.uniform_main_img div {
+    width: 33%;
+}
+
+
+
+@media (max-width: 540px) {
+    .uniform_section {
+        gap: 2rem;
+    }
+
+    .uniform_section h2 {
+        font-size: 1.3rem;
+    }
+
+    .uniform_main {
+        gap: 1rem;
+    }
+
+    .uniform_main_img {
+        width: 100%;
+    }
+
+    .uniform_main_img img {
+        width: 100%;
+        max-height: 120px;
+    }
+
+    .uniform_main_content {
+        width: 100%;
+    }
+
+    .uniform_main_content ul {
+        gap: 0.2rem;
+    }
+
+    .uniform_main_content li {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,82 @@
+.verifyform_main_cont {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, rgba(132, 117, 117, 0.212), rgba(0, 0, 0, 0.075)), url('../../assets//images//5586989.jpg');
+}
+
+.verifyMainBox {
+    width: 75%;
+    border: 2px solid black;
+    padding: 2rem;
+    font-family: var(--primary-font);
+    background-color: white;
+}
+
+.verifyMainBox h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.detailsToVerify {
+    line-height: 2rem;
+}
+
+.detailsToVerify span {
+    color: var(--secondary-clr);
+    font-weight: 600;
+}
+
+.declaration {
+    margin-top: 2.5rem;
+}
+
+.verify_submit_btn {
+    color: white;
+    padding: 0.8rem 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--secondary-clr);
+}
+
+.verify_submit_btn:hover {
+    opacity: 0.9;
+}
+
+
+
+@media (max-width: 1000px) {
+    .verifyMainBox {
+        width: 80%;
+    }
+}
+
+@media (max-width: 750px) {
+    .verifyMainBox {
+        width: 85%;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .verifyMainBox {
+        width: 95%;
+    }
+
+    .verifyform_main_cont {
+        padding: 0.5rem 0;
+    }
+
+    .verifyMainBox {
+        padding: 2rem 1rem;
+    }
+
+    .verify_submit_btn {
+        margin-top: 0.5rem;
+    }
+}
