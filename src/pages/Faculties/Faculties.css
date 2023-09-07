@@ -13,9 +13,13 @@
     letter-spacing: 0.1rem;
 }
 
-.facpage_facbox {
+.fac_tmp{
     width: 20%;
     min-width: 300px;
+}
+
+.facpage_facbox {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -45,7 +45,7 @@ const SearchStudent = () => {
             }
             setLoading(true);
             data = await axios.get(
-                `${BASE_URL}/student/searchstudent?admNo=${searchDetails.searchAdmNo}&name=${searchDetails.searchName}&className=${searchDetails.searchClass}`,
+                `${BASE_URL}/student/searchstudent?admNo=${searchDetails.searchAdmNo}&name=${searchDetails.searchName}&class=${searchDetails.searchClass}`,
                 {
                     headers: {
                         token: `Bearer ${accessToken}`

@@ -56,7 +56,7 @@ const Faculties = () => {
       </section>
       {loading ? <Loader /> : <div className="facpage_main_cont">
         {faculties.map((i) => {
-          return <div key={i._id}>
+          return <div  className='fac_tmp' key={i._id}>
             <div className="facpage_facbox">
               <img src={i.facultyImg} alt="" />
               <div className="facpage_facinfo">
