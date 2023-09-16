@@ -177,12 +177,12 @@ const printMarksheet = ([studentsData, acadYear]) => {
         doc.text(`${halfYearly[5]}`, rr, y + 60, { align: 'center' })
 
         rr = rr + 16
-        doc.text(`${marksToGrade(halfYearly[0])}`, rr, y + 25, { align: 'center' })
-        doc.text(`${marksToGrade(halfYearly[1])}`, rr, y + 32, { align: 'center' })
-        doc.text(`${marksToGrade(halfYearly[2])}`, rr, y + 39, { align: 'center' })
-        doc.text(`${marksToGrade(halfYearly[3])}`, rr, y + 46, { align: 'center' })
-        doc.text(`${marksToGrade(halfYearly[4])}`, rr, y + 53, { align: 'center' })
-        doc.text(`${marksToGrade(halfYearly[5])}`, rr, y + 60, { align: 'center' })
+        doc.text(`${marksToGrade(halfYearly[0]*100/halfMax)}`, rr, y + 25, { align: 'center' })
+        doc.text(`${marksToGrade(halfYearly[1]*100/halfMax)}`, rr, y + 32, { align: 'center' })
+        doc.text(`${marksToGrade(halfYearly[2]*100/halfMax)}`, rr, y + 39, { align: 'center' })
+        doc.text(`${marksToGrade(halfYearly[3]*100/halfMax)}`, rr, y + 46, { align: 'center' })
+        doc.text(`${marksToGrade(halfYearly[4]*100/halfMax)}`, rr, y + 53, { align: 'center' })
+        doc.text(`${marksToGrade(halfYearly[5]*100/halfMax)}`, rr, y + 60, { align: 'center' })
 
         rr = rr + 16
         doc.text(`${annualMax}`, rr, y + 25, { align: 'center' })
@@ -201,12 +201,12 @@ const printMarksheet = ([studentsData, acadYear]) => {
         doc.text(`${annual[5]}`, rr, y + 60, { align: 'center' })
 
         rr = rr + 16
-        doc.text(`${marksToGrade(annual[0])}`, rr, y + 25, { align: 'center' })
-        doc.text(`${marksToGrade(annual[1])}`, rr, y + 32, { align: 'center' })
-        doc.text(`${marksToGrade(annual[2])}`, rr, y + 39, { align: 'center' })
-        doc.text(`${marksToGrade(annual[3])}`, rr, y + 46, { align: 'center' })
-        doc.text(`${marksToGrade(annual[4])}`, rr, y + 53, { align: 'center' })
-        doc.text(`${marksToGrade(annual[5])}`, rr, y + 60, { align: 'center' })
+        doc.text(`${marksToGrade(annual[0]*100/annualMax)}`, rr, y + 25, { align: 'center' })
+        doc.text(`${marksToGrade(annual[1]*100/annualMax)}`, rr, y + 32, { align: 'center' })
+        doc.text(`${marksToGrade(annual[2]*100/annualMax)}`, rr, y + 39, { align: 'center' })
+        doc.text(`${marksToGrade(annual[3]*100/annualMax)}`, rr, y + 46, { align: 'center' })
+        doc.text(`${marksToGrade(annual[4]*100/annualMax)}`, rr, y + 53, { align: 'center' })
+        doc.text(`${marksToGrade(annual[5]*100/annualMax)}`, rr, y + 60, { align: 'center' })
 
         rr = rr + 17
         doc.text(`${100}`, rr, y + 25, { align: 'center' })

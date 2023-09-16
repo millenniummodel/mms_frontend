@@ -4,21 +4,22 @@
 
 .facpage_main_cont {
     width: 100%;
-    padding: 5rem;
+    padding: 3rem;
     font-family: var(--primary-font);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 6rem;
+    gap: 3rem;
     letter-spacing: 0.1rem;
 }
 
 .fac_tmp{
-    width: 20%;
+    width: 22%;
     min-width: 300px;
 }
 
 .facpage_facbox {
+    box-shadow: 5px 5px 8px gray;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -37,6 +38,8 @@
 
 .facpage_facbox img {
     width: 100%;
+    max-height:22rem;
+    object-fit: cover;
 }
 
 .facpage_facinfo {

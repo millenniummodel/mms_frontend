@@ -1,5 +1,6 @@
 .banner {
   min-height: calc(100vh - 100px);
+  /* background-image: url("../../assets/images/school.jpg"); */
   background-image: url("../../assets/images/pexels-anil-sharma-11366735.jpg");
   background-position: center;
   background-repeat: no-repeat;

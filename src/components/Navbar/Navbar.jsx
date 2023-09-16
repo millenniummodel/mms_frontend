@@ -90,7 +90,7 @@ const Navbar = ({ userType = "User" }) => {
 								</li>
 								<li>
 									<Link className="dropdown-item" to="/principal-message">
-										Principal's Meassage
+										Principal's Message
 									</Link>
 								</li>
 								<li>
@@ -224,7 +224,7 @@ const Navbar = ({ userType = "User" }) => {
 												className="mob-dropdown-item"
 												to="/principal-message"
 											>
-												Principal's Meassage
+												Principal's Message
 											</Link>
 										</li>
 										<li>

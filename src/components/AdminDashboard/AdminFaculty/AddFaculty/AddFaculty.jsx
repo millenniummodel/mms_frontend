@@ -23,17 +23,19 @@ const AddFaculty = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (/^\d+$/.test(facultyDetails.facultyPhone) === false || facultyDetails.facultyPhone.length !== 10) {
-      return toast.error("Invalid phone no.!", {
-        position: "top-right",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-    });
+    if (facultyDetails.facultyPhone !== '') {
+      if (/^\d+$/.test(facultyDetails.facultyPhone) === false || facultyDetails.facultyPhone.length !== 10) {
+        return toast.error("Invalid phone no.!", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      }
     }
     try {
       const [isOk] = await AlertConfirm('Are you sure?');
@@ -74,7 +76,7 @@ const AddFaculty = () => {
         draggable: true,
         progress: undefined,
         theme: "light",
-    });
+      });
     }
 
 
@@ -161,7 +163,7 @@ const AddFaculty = () => {
                   <div className="facInputBox">
                     <input
                       type="text"
-                      id="facultyImage"
+                      id="facultyImg"
                       onChange={handleChange}
                     />
                   </div>

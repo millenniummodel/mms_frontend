@@ -70,7 +70,13 @@
     list-style: decimal;
 }
 
+.schoolLink{
+    color: blue;
+}
 
+.schoolLink:hover{
+    text-decoration: underline;
+}
 
 
 @media (max-width: 540px) {

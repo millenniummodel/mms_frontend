@@ -176,4 +176,7 @@ nav ul li .navList:hover::before,
   .loginBtn {
     padding: 0.5rem 0.8rem;
   }
+  .mjjj{
+    overflow: scroll;
+  }
 }

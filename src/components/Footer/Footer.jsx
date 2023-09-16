@@ -8,10 +8,6 @@ import logo from '../../assets/images/logo1.png'
 
 const quick_links = [
   {
-    path: '/login',
-    display: 'Login',
-  },
-  {
     path: '/contacts',
     display: 'Contact'
   },
@@ -22,6 +18,14 @@ const quick_links = [
   {
     path: '/result',
     display: 'Result'
+  },
+  {
+    path: '/faculties',
+    display: 'Faculties',
+  },
+  {
+    path: '/school-timings',
+    display: 'Timings',
   },
 ]
 
@@ -50,14 +54,15 @@ const Footer = ({ mode }) => {
         <Row className='footer_row'>
           <Col lg='2' className='pt-3'>
             <div className='logo '>
-              <img src={logo} className='mx-auto' alt='Not available'/>
-              <div className='social-links d-flex align-items-center gap-4'>
+              <img src={logo} className='mx-auto' alt='Not available' />
+              {/* <div className='social-links d-flex align-items-center gap-4'>
                 <span><Link to='#'><i className="fa-brands fa-youtube"></i></Link></span>
                 <span><Link to='#'><i className="fa-brands fa-github"></i></Link></span>
                 <span><Link to='#'><i className="fa-brands fa-instagram"></i></Link></span>
                 <span><Link to='#'><i className="fa-brands fa-facebook"></i></Link></span>
-              </div>
+              </div> */}
             </div>
+            {/* <div>Millennium Model School</div> */}
           </Col>
 
           <Col lg='2'>
@@ -74,10 +79,10 @@ const Footer = ({ mode }) => {
             <ListGroup className='footer-quick-links'>
               <ListGroupItem className='underline ps-0 border-0'>
                 <h6 className='d-flex align-items-center gap-3'>
-                  <span><i className="fa-solid fa-location-pin"></i></span>
+                  <span><i className="fa-solid fa-location-dot"></i></span>
                   Address :
                 </h6>
-                <p className='mb-0'>Khajrod Road, Mandi Bamora, M.P.</p>
+                <p className='mb-0'>Millennium Model School Khajrod Road, Mandi Bamora, M.P.</p>
               </ListGroupItem>
             </ListGroup>
 
@@ -111,7 +116,7 @@ const Footer = ({ mode }) => {
         </Row>
       </Container>
       <div lg='12' className='mt-5 copyright_main'>
-        <p className='copyright'>Copyright &#169; {2023}, Millenium Model School, Mandi Bamora</p>
+        <p className='copyright'>Copyright &#169; {2023}, Millennium Model School, Mandi Bamora</p>
         <p className='copyright'>Developed by <a href='https://www.linkedin.com/in/devesh-raghuvanshi-624040239/' target='_blank' rel="noreferrer">Devesh</a> and <a href='https://www.linkedin.com/in/mamatva-jain-094798218/' target='_blank' rel="noreferrer"> Mamatva</a> </p>
       </div>
     </footer>

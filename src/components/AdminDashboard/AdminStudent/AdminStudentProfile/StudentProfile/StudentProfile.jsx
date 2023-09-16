@@ -58,6 +58,15 @@ const StudentProfile = ({ studentData, userType }) => {
         }
     };
 
+    const printTCHandler=(data)=>{
+        const studentData={...data}
+        studentData.tcDetails.dol=reverseDate(studentData.tcDetails.dol)
+        studentData.tcDetails.issueDate=reverseDate(studentData.tcDetails.issueDate)
+        studentData.doa=reverseDate(studentData.doa)
+        studentData.dob=reverseDate(studentData.dob)
+        printTC([studentData])
+    }
+
     return (
         <>
             <EditStudent studentData={studentData} />
@@ -180,7 +189,7 @@ const StudentProfile = ({ studentData, userType }) => {
                                 onClick={async () => {
                                     const [conf] = await AlertConfirm("Are you sure?")
                                     if (!conf) return;
-                                    printTC([studentData]);
+                                    printTCHandler(studentData);
                                 }}
                             >
                                 Print TC

@@ -58,13 +58,13 @@ const Faculties = () => {
         {faculties.map((i) => {
           return <div  className='fac_tmp' key={i._id}>
             <div className="facpage_facbox">
-              <img src={i.facultyImg} alt="" />
+              <img src={i.facultyImg} alt="Not available" />
               <div className="facpage_facinfo">
                 <p className="facdetail_name">{i.facultyName}</p>
                 <div className="facdetail_desig">{i.facultyDesignation}</div>
                 <div className="facpage_facinfo_detail_main">
                   <p className="facdetail_title">Experience:</p>
-                  <p className="facdetail_content">{i.facultyExperience} Years</p>
+                  <p className="facdetail_content">{i.facultyExperience} {i.facultyExperience===1?'Year':'Years'}</p>
                 </div>
                 <div className="facpage_facinfo_detail_main">
                   <p className="facdetail_title">Education:</p>

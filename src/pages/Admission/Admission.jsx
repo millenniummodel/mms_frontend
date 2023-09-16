@@ -61,7 +61,7 @@ const Admission = () => {
             <h4 className="text-center mt-2 mb-4">Admission Process</h4>
             <ul className="admissionProcess">
               <li>
-                You can fill the registration form online at mmsmaba.ac.in.
+                You can fill the registration form online at <a className='schoolLink' href='https://millenniummodelschool.tech/'>millenniummodelschool.tech</a> .
               </li>
               <li>
                 Fill the registration form with all the required information

@@ -66,7 +66,7 @@ const ContactUs = () => {
             <iframe title='Map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.1240516105204!2d78.08112467544213!3d24.061935678459104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3979678bd2b7e55b%3A0x216132c20b2b6013!2sMillennium%20Model%20School!5e0!3m2!1sen!2sin!4v1691687388183!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div className="contact_info_main">
-            <h2 className="cont_info_box cont_info_title">Millenium Model School</h2>
+            <h2 className="cont_info_box cont_info_title">Millennium Model School</h2>
             <div className="cont_info_box">
               <h5 className="cont_info_head">Office Hours:</h5>
               <div className="cont_info_details">11:30 AM - 3:00 PM</div>

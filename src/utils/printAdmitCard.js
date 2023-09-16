@@ -5,6 +5,8 @@ import logo from '../assets/images/logo1.png'
 
 const printAdmitCard = ([examDetails, students]) => {
 
+    
+
         var doc = new jsPDF('l', 'mm', [297, 210]);
 
         const xP = [5, 5, 5, 152, 152, 152]
@@ -29,7 +31,7 @@ const printAdmitCard = ([examDetails, students]) => {
             doc.setFont(undefined, 'bold').text('Millennium Model School Mandi Bamora', x + 30, y + 6).setFont(undefined, 'normal');
 
             doc.setFontSize(11);
-            doc.setFont(undefined, 'italic').text(`Admit Card - ${examDetails["examName"]}`, x + 38, y + 12).setFont(undefined, 'normal');
+            doc.setFont(undefined, 'italic').text(`Admit Card - ${exam}`, x + 38, y + 12).setFont(undefined, 'normal');
 
             doc.setFontSize(11);
             doc.text(`Name     :  ${student.name}`, x + 7, y + 24)
@@ -47,24 +49,24 @@ const printAdmitCard = ([examDetails, students]) => {
 
             doc.line(x + 108, y + 24, x + 108, y + 60);
 
-            doc.text(`Time - ${examDetails[student.class][6]}`, x+87, y + 20)
+            doc.text(`Time - ${examDetails["time"]}`, x+87, y + 20)
             doc.text(`${examDetails["date"][0]}`, x+87, y + 28)
-            doc.text(`${examDetails[student.class][0]}`, x + 124, y + 28, { align: 'center' })
+            doc.text(`${examDetails["subjects"][0]}`, x + 124, y + 28, { align: 'center' })
 
             doc.text(`${examDetails["date"][1]}`, x+87, y + 34)
-            doc.text(`${examDetails[student.class][1]}`, x + 124, y + 34, { align: 'center' })
+            doc.text(`${examDetails["subjects"][1]}`, x + 124, y + 34, { align: 'center' })
 
             doc.text(`${examDetails["date"][2]}`, x+87, y + 40)
-            doc.text(`${examDetails[student.class][2]}`, x + 124, y + 40, { align: 'center' })
+            doc.text(`${examDetails["subjects"][2]}`, x + 124, y + 40, { align: 'center' })
 
             doc.text(`${examDetails["date"][3]}`, x+87, y + 46)
-            doc.text(`${examDetails[student.class][3]}`, x + 124, y + 46, { align: 'center' })
+            doc.text(`${examDetails["subjects"][3]}`, x + 124, y + 46, { align: 'center' })
 
             doc.text(`${examDetails["date"][4]}`, x+87, y + 52)
-            doc.text(`${examDetails[student.class][4]}`, x + 124, y + 52, { align: 'center' })
+            doc.text(`${examDetails["subjects"][4]}`, x + 124, y + 52, { align: 'center' })
 
             doc.text(`${examDetails["date"][5]}`, x+87, y + 58)
-            doc.text(`${examDetails[student.class][5]}`, x + 124, y + 58, { align: 'center' })
+            doc.text(`${examDetails["subjects"][5]}`, x + 124, y + 58, { align: 'center' })
 
             doc.setFontSize(10);
             doc.setFont(undefined, 'bold').text('Headmaster', x + 60, y + 57).setFont(undefined, 'normal');
@@ -74,7 +76,7 @@ const printAdmitCard = ([examDetails, students]) => {
             return 1
         })
 
-        doc.save(`Admit Card - ${exam}`)
+        doc.save(`Admit Card - ${exam} Class - ${examDetails.cls}`)
 
 }
 

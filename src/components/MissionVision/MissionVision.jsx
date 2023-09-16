@@ -22,7 +22,7 @@ const MissionVision = () => {
             <div className="mission_main_cont">
                 <div className="mission">
                     <h3>Mission</h3>
-                    <p>At Millenium Model School, our mission is to provide a nurturing and inclusive learning environment that empowers students to achieve their fullest potential. We are dedicated to fostering a passion for lifelong learning, cultivating critical thinking skills, and nurturing creativity. Through personalized education, a diverse curriculum, and a commitment to character development, we aim to shape responsible global citizens who contribute positively to society.</p>
+                    <p>At Millennium Model School, our mission is to provide a nurturing and inclusive learning environment that empowers students to achieve their fullest potential. We are dedicated to fostering a passion for lifelong learning, cultivating critical thinking skills, and nurturing creativity. Through personalized education, a diverse curriculum, and a commitment to character development, we aim to shape responsible global citizens who contribute positively to society.</p>
                 </div>
                 <div className="mission">
                     <h3>Vision</h3>
