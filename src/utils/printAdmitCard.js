@@ -33,7 +33,7 @@ const printAdmitCard = ([examDetails, students]) => {
             doc.setFontSize(11);
             doc.setFont(undefined, 'italic').text(`Admit Card - ${exam}`, x + 38, y + 12).setFont(undefined, 'normal');
 
-            doc.setFontSize(11);
+            doc.setFontSize(11) ;
             doc.text(`Name     :  ${student.name}`, x + 7, y + 24)
             doc.text(`Class     :  ${student.class}`, x + 7, y + 32)
             doc.text(`Roll No. :  ${student.rollNo}`, x + 7, y + 40)
