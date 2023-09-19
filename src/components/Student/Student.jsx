@@ -80,7 +80,7 @@ const Student = () => {
           </div>
           <div className="profile_head_grp col-md-6">
             <h4>Date of Birth : </h4>
-            <p>{reverseDate(studentData.dob)}</p>
+            <p>{studentData.dob}</p>
           </div>
           <div className="profile_head_grp col-md-6">
             <h4>Roll Number : </h4>

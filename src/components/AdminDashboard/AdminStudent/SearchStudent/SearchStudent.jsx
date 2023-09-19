@@ -165,7 +165,7 @@ const SearchStudent = () => {
                                         </div>
 
                                         <div className='d-flex'>
-                                            <div className=' student_res_headers'>Gender</div><div className=' student_res_list'>{result.gender}</div>
+                                            <div className=' student_res_headers'>Roll No.</div><div className=' student_res_list'>{result.rollNo}</div>
                                         </div>
 
                                         <div className='d-flex'>
@@ -197,7 +197,7 @@ const SearchStudent = () => {
                                 <Col lg="2">Admission No.</Col>
                                 <Col lg="4">Student's Name</Col>
                                 <Col lg="2">Class</Col>
-                                <Col lg="2">Gender</Col>
+                                <Col lg="2">Roll No.</Col>
                                 <Col lg="2">Details</Col>
                             </Row>
                             {searchResult.map((result) => {
@@ -206,7 +206,7 @@ const SearchStudent = () => {
                                         <Col lg="2">{result.admNo}</Col>
                                         <Col lg="4">{result.name}</Col>
                                         <Col lg="2">{result.class}</Col>
-                                        <Col lg="2">{result.gender}</Col>
+                                        <Col lg="2">{result.rollNo}</Col>
                                         <Col lg="2">
                                             <Link
                                                 target="_blank"

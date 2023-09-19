@@ -1,4 +1,6 @@
-export const BASE_URL="https://mms-backend-9937.onrender.com/api/v1"
+// export const BASE_URL="http://localhost:4000/api/v1"
+// export const BASE_URL="https://mms-backend-9937.onrender.com/api/v1"
+export const BASE_URL="https://colorful-pink-hem.cyclic.cloud/api/v1"
 
 export const DEFAULT_STUDENT_IMG="https://www.citypng.com/public/uploads/preview/hd-man-user-illustration-icon-transparent-png-11640168385tqosatnrny.png?v=2023052218"
 
