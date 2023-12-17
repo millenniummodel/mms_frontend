@@ -34,7 +34,7 @@ const PrincipalMessage = () => {
                     <p>As we embark on another exciting academic year, I invite you to explore our website, learn more about our programs, faculty, and facilities, and become a part of the Millennium Model School family. Feel free to reach out with any questions or to schedule a visit. We look forward to partnering with you in creating a bright and promising future for our students.</p>
                     <p className='mt-2'>Warm regards,</p>
                     <div className='mt-2 text-end'>
-                        <p className='principal_right_name'>Pramod Jhakeria</p>
+                        <p className='principal_right_name'>Pramod Jakheria</p>
                         <p>Principal</p>
                     </div>
                 </div>
